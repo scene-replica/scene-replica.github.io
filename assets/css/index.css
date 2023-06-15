@@ -171,8 +171,9 @@ font-style: italic;
   border-radius: 5px;
 }
 
-.interpolation-video-column {
-}
+/* .interpolation-video-column {
+
+} */
 
 .interpolation-panel .slider {
   margin: 0 !important;
@@ -187,4 +188,8 @@ font-style: italic;
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+
+.center {
+  text-align: center !important;
 }
