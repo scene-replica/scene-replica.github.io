@@ -193,3 +193,17 @@ font-style: italic;
 .center {
   text-align: center !important;
 }
+
+#leaderboard-trophy-icon{
+  position: relative;
+  top: 7px;
+  width: 2.5rem;
+  height: 2rem;
+}
+
+#leader-board-metric-icon{
+  position: relative;
+  top: 1px;
+  width: 1rem;
+  height: 1rem;
+}
