@@ -8,6 +8,7 @@ function get_leaderboard_entry(idx, entry) {
   let th_n2f_content = ``
   let th_frnd_content = ``
   for (var i = 0; i < n; i += 1) {
+    entry[i]=entry[i].replace(/@(\d+)@/g, '<a href="#bib-$1"> [$1]</a>');
     if (i>=0 && i<4){
       row_prefix += `<td>${entry[i]}</td>`;
     }else if(i>=4 && i<8){
@@ -15,7 +16,7 @@ function get_leaderboard_entry(idx, entry) {
     }else if(i>=8 && i<n-1){
       th_frnd_content += `<td>${entry[i]}</td>`;
     }else{
-      var vid_link_html = `<td> <a style=""href="" target="_blank">Link</a></td>`
+      var vid_link_html = `<td> <a href="#" target="_blank"><span class="icon"><i class="fas fa-link"></i></span></a></td>`
       th_n2f_content += vid_link_html
       th_frnd_content += vid_link_html
     }
@@ -87,6 +88,14 @@ $(document).ready(function () {
       tbody.append(row);
     });
   }
+
+
+  // references
+  let references_html = ``
+  for (reference in references) {
+    references_html += `<li id="bib-${reference}" class="references">${references[reference]}</li>`
+  }
+  $('#references').html(references_html)
 })
 
 
