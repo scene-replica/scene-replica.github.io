@@ -171,8 +171,9 @@ font-style: italic;
   border-radius: 5px;
 }
 
-.interpolation-video-column {
-}
+/* .interpolation-video-column {
+
+} */
 
 .interpolation-panel .slider {
   margin: 0 !important;
@@ -187,4 +188,22 @@ font-style: italic;
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+
+.center {
+  text-align: center !important;
+}
+
+#leaderboard-trophy-icon{
+  position: relative;
+  top: 7px;
+  width: 2.5rem;
+  height: 2rem;
+}
+
+#leader-board-metric-icon{
+  position: relative;
+  top: 1px;
+  width: 1rem;
+  height: 1rem;
 }

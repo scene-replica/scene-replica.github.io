@@ -1,120 +1,155 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="SceneReplica: Benchmarking Real-World Robot Manipulation by Creating Reproducible Scenes">
-  <meta name="author" content="Anonymous Authors">
-  <title>SceneReplica: Benchmarking Real-World Robot Manipulation by Creating Reproducible Scenes</title>
+  <meta id="meta-desc" name="description" content="">
+  <meta id="meta-author" name="author" content="Anonymous Authors">
+  <title id="title"></title>
 
-  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-        rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./assets/css/bulma.min.css">
-  <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./assets/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./assets/css/fontawesome.all.min.css">
-  <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./assets/css/index.css">
   <link rel="icon" href="#">
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./assets/js/fontawesome.all.min.js"></script>
-  <script src="./assets/js/bulma-carousel.min.js"></script>
-  <script src="./assets/js/bulma-slider.min.js"></script>
-  <script src="./assets/js/index.js"></script>
 </head>
+
 <body>
-
-<section class="hero">
-  <div class="hero-body pad-zero">
-    <div class="container is-max-desktop">
-      <div class="columns is-centered">
-        <div class="column has-text-centered">
-          <h1 class="title is-2 publication-title"> <span class="small-caps">SceneReplica</span>: Benchmarking Real-World Robot Manipulation by Creating Reproducible Scenes</h1>
-          <div class="is-size-5 publication-authors">
-            <span class="author-block">
-              <a target="_blank" href="">Anonymous Authors</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </span>
-          </div>
-
-
+  <section class="hero">
+    <div class="hero-body pad-zero">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
           <div class="column has-text-centered">
-            <div class="publication-links">
-
-              <!-- Arxiv Link. -->
-              <span class="link-block">
-                <a target="_blank" href="https://arxiv.org"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>Paper</span>
-                </a>
-              </span> 
-
-              <!-- Code Link. -->
-              <span class="link-block">
-                <a href="https://github.com" class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
-                  <span>Code</span>
-                  </a>
+            <h1 id="project-name" class="title is-2 publication-title"></h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a target="_blank" href="">Anonymous Authors</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </span>
             </div>
 
+            <div class="column has-text-centered">
+              <div class="publication-links">
+
+                <!-- Arxiv Link. -->
+                <span class="link-block">
+                  <a target="_blank" href="https://arxiv.org" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a href="https://github.com" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Purchase Link. -->
+                <span class="link-block">
+                  <a href="purchase-links/" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-link"></i>
+                    </span>
+                    <span>Purchase Link</span>
+                  </a>
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="section">
-  <div class="container is-max-desktop">
-
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
       <div class="columns is-centered has-text-centered">
         <div class="column">
-          <div class="publication-video">
-            <iframe src="https://www.youtube.com/"
-            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              We present a new reproducible benchmark for evaluating robot manipulation in the real world, specifically
+              focusing on the task of pick-and-place. Our benchmark uses the YCB objects, a commonly used dataset in the
+              robotics community, to ensure that our results are comparable to other studies.
+              Additionally, the benchmark is designed to be easily reproducible in the real world, making it accessible
+              for researchers and practitioners. We also provide our experimental results and analyses for model-based
+              and model-free 6D robotic grasping on the benchmark, where representative algorithms for object
+              perception, grasping planning and motion planning are evaluated. We believe that our benchmark will be a
+              valuable tool for advancing the field of robot manipulation.
+              By providing a standardized evaluation framework, researchers can more easily compare different techniques
+              and algorithms, leading to faster progress in developing robot manipulation methods.
+            </p>
           </div>
         </div>
       </div>
-      <!--/ Paper video. -->
-        
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            We present a new reproducible benchmark for evaluating robot manipulation in the real world, specifically focusing on the task of pick-and-place. Our benchmark uses the YCB objects, a commonly used dataset in the robotics community, to ensure that our results are comparable to other studies. 
-            Additionally, the benchmark is designed to be easily reproducible in the real world, making it accessible for researchers and practitioners. We also provide our experimental results and analyses for model-based and model-free 6D robotic grasping on the benchmark, where representative algorithms for object perception, grasping planning and motion planning are evaluated. We believe that our benchmark will be a valuable tool for advancing the field of robot manipulation. 
-            By providing a standardized evaluation framework, researchers can more easily compare different techniques and algorithms, leading to faster progress in developing robot manipulation methods.
-          </p>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- LeaderBoard. -->
+      <div class="columns">
+        <div class="columns is-centered has-text-centered">
+          <div class="column">
+            <h2 class="title is-3"><span id="leaderboard-trophy-icon" class="icon"><img
+                  src="./assets/images/winner-icon.png" alt="medal"></span>&nbsp;LeaderBoard</h2>
+            <div class="content has-text-justified"></div>
+            <table id="leaderboard-table" class="table">
+              <thead>
+                <tr>
+                  <th><abbr title="Click to Sort | Method#">#</abbr></th>
+                  <th><abbr title="Click to Sort">Perception</abbr></th>
+                  <th><abbr title="Click to Sort">Grasp Planning</abbr></th>
+                  <th><abbr title="Click to Sort">Motion Planning</abbr></th>
+                  <th><abbr title="Click to Sort">Control</abbr></th>
+                  <th><abbr title="Click to Sort">Ordering</abbr></th>
+                  <th><abbr title="Click to Sort">Grasping Type</abbr></th>
+                  <th><abbr title="Click to Sort">Pick & Place Success&nbsp;<span id="leader-board-metric-icon"
+                        class="icon"><img src="./assets/images/medal.png" alt="medal"></span></abbr></th>
+                  <th><abbr title="Click to Sort">Grasping Success</abbr></th>
+                  <th><abbr title="Click to Sort">Videos</abbr></th>
+                </tr>
+              </thead>
+              <tbody id="leaderboard-body"></tbody>
+            </table>
+          </div>
+        </div>
+        <!--/ LeaderBoard. -->
+      </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- References. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">References</h2>
+          <div class="content has-text-justified">
+            <ol id="references"></ol>
+          </div>
         </div>
       </div>
+      <!--/ References. -->
     </div>
-    <!--/ Abstract. -->
-
-
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <a target="_blank" href="" class="large-font bottom_buttons black-font">
-        <svg class="svg-inline--fa fa-file-pdf fa-w-12" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-pdf" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" data-fa-i2svg=""><path fill="currentColor" d="M181.9 256.1c-5-16-4.9-46.9-2-46.9 8.4 0 7.6 36.9 2 46.9zm-1.7 47.2c-7.7 20.2-17.3 43.3-28.4 62.7 18.3-7 39-17.2 62.9-21.9-12.7-9.6-24.9-23.4-34.5-40.8zM86.1 428.1c0 .8 13.2-5.4 34.9-40.2-6.7 6.3-29.1 24.5-34.9 40.2zM248 160h136v328c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24V24C0 10.7 10.7 0 24 0h200v136c0 13.2 10.8 24 24 24zm-8 171.8c-20-12.2-33.3-29-42.7-53.8 4.5-18.5 11.6-46.6 6.2-64.2-4.7-29.4-42.4-26.5-47.8-6.8-5 18.3-.4 44.1 8.1 77-11.6 27.6-28.7 64.6-40.8 85.8-.1 0-.1.1-.2.1-27.1 13.9-73.6 44.5-54.5 68 5.6 6.9 16 10 21.5 10 17.9 0 35.7-18 61.1-61.8 25.8-8.5 54.1-19.1 79-23.2 21.7 11.8 47.1 19.5 64 19.5 29.2 0 31.2-32 19.7-43.4-13.9-13.6-54.3-9.7-73.6-7.2zM377 105L279 7c-4.5-4.5-10.6-7-17-7h-6v128h128v-6.1c0-6.3-2.5-12.4-7-16.9zm-74.1 255.3c4.1-2.7-2.5-11.9-42.8-9 37.1 15.8 42.8 9 42.8 9z"></path></svg>
-      </a>
-      <br>
-      <p>Page template borrowed from <a target="_blank" href="https://nerfies.github.io"><span class="small-caps black-font">Nerfies</span></a>.</p>
-    </div>
-  </div>
-</footer>
+  </section>
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="./assets/js/fontawesome.all.min.js"></script>
+<script src="./assets/js/global-index.js"></script>
+<script src="./assets/js/leaderboard-info.js"></script>
+<script src="./assets/js/index.js"></script>
+
 </html>
