@@ -1,21 +1,17 @@
-function log(message) {
-  console.log(message);
-}
-
 function get_leaderboard_entry(idx, entry) {
   let n = entry.length
-  let row_prefix = `<td>${idx+1}</td>`
+  let row_prefix = `<td>${idx + 1}</td>`
   let th_n2f_content = ``
   let th_frnd_content = ``
   for (var i = 0; i < n; i += 1) {
-    entry[i]=entry[i].replace(/@(\d+)@/g, '<a href="#bib-$1"> [$1]</a>');
-    if (i>=0 && i<4){
+    entry[i] = entry[i].replace(/@(\d+)@/g, '<a href="#bib-$1"> [$1]</a>');
+    if (i >= 0 && i < 4) {
       row_prefix += `<td>${entry[i]}</td>`;
-    }else if(i>=4 && i<8){
+    } else if (i >= 4 && i < 8) {
       th_n2f_content += `<td>${entry[i]}</td>`;
-    }else if(i>=8 && i<n-1){
+    } else if (i >= 8 && i < n - 1) {
       th_frnd_content += `<td>${entry[i]}</td>`;
-    }else{
+    } else {
       var vid_link_html = `<td> <a href="#" target="_blank"><span class="icon"><i class="fas fa-link"></i></span></a></td>`
       th_n2f_content += vid_link_html
       th_frnd_content += vid_link_html
