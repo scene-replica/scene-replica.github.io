@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    if (window.localStorage.getItem('cat') === null ||  window.localStorage.getItem('id') === null || window.localStorage.getItem('vli') === null){
+        window.localStorage.setItem('cat', 'Near-to-Far')
+        window.localStorage.setItem('id', 1)
+        window.localStorage.setItem('vli', 1)
+    }
     query = {
         'cat': window.localStorage.getItem('cat'),
         'id': window.localStorage.getItem('id'),
