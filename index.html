@@ -11,6 +11,8 @@
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./assets/css/bulma.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./assets/css/bulma-slider.min.css">
   <link rel="stylesheet" href="./assets/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./assets/css/index.css">
@@ -53,6 +55,47 @@
                   </a>
                 </span> -->
 
+
+                <!-- Scene Link. -->
+                <span class="link-block">
+                  <a href="#scenes" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-image"></i>
+                    </span>
+                    <span>Scenes</span>
+                  </a>
+                </span>
+
+                <!-- Scene Replication. -->
+                <span class="link-block">
+                  <a href="#scene-replication" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-video"></i>
+                    </span>
+                    <span>Scene Replication</span>
+                  </a>
+                </span>
+
+                <!-- Grasping. -->
+                <span class="link-block">
+                  <a href="#grasping" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-hand-lizard"></i>
+                    </span>
+                    <span>Grasping</span>
+                  </a>
+                </span>
+
+                <!-- Leaserboard. -->
+                <span class="link-block">
+                  <a href="#leaderboard" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-trophy"></i>
+                    </span>
+                    <span>Leaderboard</span>
+                  </a>
+                </span>
+ 
                 <!-- Purchase Link. -->
                 <span class="link-block">
                   <a href="purchase-links/" class="external-link button is-normal is-rounded is-dark">
@@ -62,27 +105,12 @@
                     <span>Purchase Link</span>
                   </a>
                 </span>
+
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container is-max-desktop">
-      <!-- Abstract. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column">
-          <!-- <h2 class="title is-3">sdsdfsdf</h2> -->
-          <div class="content has-text-justified">
-            <img src="assets/images/scene-replica-scenes.png" alt="20 scenes in our SceneReplica benchmark with 5 YCB objects in each scene">
-            <p class="center">20 scenes in our <span class="small-caps">SceneReplica</span> benchmark with 5 YCB objects in each scene.</p>
-          </div>
-        </div>
-      </div>
-      <!--/ Abstract. -->
     </div>
   </section>
 
@@ -112,8 +140,83 @@
     </div>
   </section>
 
+  <section id="scenes" class="section">
+    <div class="container is-max-desktop">
+      <!-- 20xScenes. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Scenes</h2>
+          <div class="content has-text-justified">
+            <img src="assets/images/scene-replica-scenes.png" alt="20 scenes in our SceneReplica benchmark with 5 YCB objects in each scene">
+            <p class="center">20 scenes in our <span class="small-caps">SceneReplica</span> benchmark with 5 YCB objects in each scene</p>
+          </div>
+        </div>
+      </div>
+      <!--/ 20xScenes. -->
+    </div>
+  </section>
 
-  <section class="section">
+<section id="scene-replication" class="section">
+    <div class="container is-max-desktop">
+      <!-- Scene Replication. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Scene Replication</h2>
+          <div class="content has-text-justified">
+            <div class="column">
+              <div class="publication-video">
+                <iframe src="https://drive.google.com/file/d/1iEjsuJcAtu4q3NGFKv3nGwDm6R3Pl-oG/preview" allow="autoplay"></iframe>
+              </div>
+              <p class="center">The process of replicating a scene in the real world. The reference scene image is overlaid
+                to the real camera image to guide how to place objects into the real-world scene.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/ Scene Replication. -->
+    </div>
+  </section>
+
+  <section id="grasping" class="section">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Grasping</h2>
+      </div></div>
+      <div class="container is-max-desktop">
+        <div id="results-carousel" class="carousel results-carousel">
+          <div id="slider" style="max-width:100%">
+              <div class="card">
+                  <div class="card-image">
+                      <figure class="image irn-scene-set-fig is-covered">
+                          <img class="carousel-img" src="./assets/images/modelbased-grasping.png" alt="model-based-grasping" />
+                      </figure>
+                  </div>
+                  <div class="card-content slider-text">
+                      <div class="is-size-10 box carousel-caption">
+                          Model Based Grasping Pipeline
+                      </div>
+                  </div>
+              </div>
+              <div class="card">
+                <div class="card-image">
+                    <figure class="image irn-scene-set-fig is-covered">
+                        <img class="carousel-img" src="./assets/images/modelfree-grapsing.png" alt="model-based-grasping" />
+                    </figure>
+                </div>
+                <div class="card-content slider-text">
+                    <div class="is-size-10 box carousel-caption">
+                        Model Free Grasping Pipeline
+                    </div>
+                </div>
+            </div>
+        </div>  
+      </div>
+    </div>
+  </section>
+
+
+  <section id="leaderboard" class="section">
     <div class="container is-max-desktop">
       <!-- LeaderBoard. -->
       <div class="columns">
@@ -167,6 +270,8 @@
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script defer src="./assets/js/fontawesome.all.min.js"></script>
+<script src="./assets/js/bulma-carousel.min.js"></script>
+<script src="./assets/js/bulma-slider.min.js"></script>
 <script src="./assets/js/global-index.js"></script>
 <script src="./assets/js/leaderboard-info.js"></script>
 <script src="./assets/js/index.js"></script>
