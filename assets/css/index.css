@@ -207,3 +207,11 @@ font-style: italic;
   width: 1rem;
   height: 1rem;
 }
+
+.scene-video-link{
+  color: #3273dc;
+}
+
+.scene-video-link:hover{
+  cursor: pointer;
+}
