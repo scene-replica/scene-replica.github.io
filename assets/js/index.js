@@ -39,13 +39,13 @@ function get_leaderboard_entry(idx, entry) {
             row_prefix += `<td>${entry[i]}</td>`;
         } else if (i >= 4 && i < 8) {
             th_n2f_content += `<td>${entry[i]}</td>`;
-        } else if (i >= 8 && i < n - 1) {
+        } else if (i >= 8 && i < n) {
             th_frnd_content += `<td>${entry[i]}</td>`;
-        } else {
-            th_n2f_content += get_link(idx + 1, 'Near-to-Far', 1)
-            th_frnd_content += get_link(idx + 1, 'Fixed-Random', 2)
         }
     }
+
+    th_n2f_content += get_link(idx + 1, 'Near-to-Far', 1)
+    th_frnd_content += get_link(idx + 1, 'Fixed-Random', 2)
 
     // return `<tr><th>${idx+1}</th>${th_content}</tr>` Use for rank
     return `<tr>${row_prefix}${th_n2f_content}</tr><tr>${row_prefix}${th_frnd_content}</tr>`
