@@ -42,6 +42,8 @@ const video_links = {
         [10, 'https://www.youtube.com/embed/yOq392sQGTE', 'https://www.youtube.com/embed/xotvTLLUBjc'],
         [25, 'https://drive.google.com/file/d/1lFAba7ZQs2sfQQK4DnfpA-jZJcqBZrbD/preview', 'https://drive.google.com/file/d/18Ltzd3dnj_C2AUUasRgQ_SyZBY-zzPfS/preview'],
         [27, 'https://drive.google.com/file/d/1PUFa-2pfaLhLPJUGnBOWISyCyltEQQPl/preview', 'https://drive.google.com/file/d/1B7ad2z5vS6yImecfqvXnZUEhhlEUYZ4w/preview'],
+        [33, '#', 'https://drive.google.com/file/d/1AReJZRaUgMx_RBzDOlcWdeQd3lffbzgh/preview'],
+        [36, '#', 'https://drive.google.com/file/d/1eAqjss6mbifX8zx_JUO95lkL0E-jmx0k/preview'],
         [38, 'https://drive.google.com/file/d/1VT9k9aD8mzaWaf-G7QARF8z8FvBkqeHz/preview', 'https://drive.google.com/file/d/1r0lUhEbpNvDCVVPGv_yVnjOemx7l4F25/preview'],
         [39, 'https://drive.google.com/file/d/1HYz5ln3qjHwvUHJUTGJPrYyLFFQRBIaz/preview', 'https://drive.google.com/file/d/1RL3N5u82Sv4-tP45c2xxw2SR2gCzQKqU/preview'],
         [48, 'https://drive.google.com/file/d/1-ZoI3YzIQEqZsjSDdNwE5I-9efmvQX6Y/preview', 'https://drive.google.com/file/d/1-e3HIx0QYCTNW1PsfV7qhPrk5TH5tOFp/preview'],

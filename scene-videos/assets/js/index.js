@@ -15,18 +15,20 @@ $(document).ready(function () {
     let vid_html = ``
     let v_links = video_links[query['id']]
     for (var i = 0; i < v_links.length; i++) {
-        vid_html += `
-        <div class="columns is-centered">
-        <div class="column">
-                <div class="content has-text-centered">
-                    <div class="publication-video">
-                        <iframe width="560px" height="315px" src="${v_links[i][query['vli']]}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                        </div>
-                        <p class="subtitle has-text-centered"><strong>Scene: ${v_links[i][0]}</strong></p>
-                </div>
-                </div>
-        </div>
-        `
+        if (v_links[i][query['vli']] != '#'){
+            vid_html += `
+            <div class="columns is-centered">
+            <div class="column">
+                    <div class="content has-text-centered">
+                        <div class="publication-video">
+                            <iframe width="560px" height="315px" src="${v_links[i][query['vli']]}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                            <p class="subtitle has-text-centered"><strong>Scene: ${v_links[i][0]}</strong></p>
+                    </div>
+                    </div>
+            </div>
+            `
+        }
     }
     $('#vid-items').html(vid_html)
 });
